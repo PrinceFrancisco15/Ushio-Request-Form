@@ -1,0 +1,8 @@
+Array
+(
+    [user_id] => 2
+    [username] => employee_user
+    [full_name] => User
+    [role] => employee
+    [department_id] => 1
+)

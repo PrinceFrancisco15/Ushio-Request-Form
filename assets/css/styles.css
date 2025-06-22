@@ -1,0 +1,155 @@
+:root {
+    --ushio-green: 
+#009977; /* USHIO brand green color */
+    --ushio-green-dark: 
+#00815e;
+
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url('assets/images/ushio-building.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.65); /* This creates a semi-transparent white overlay */
+    z-index: -1;
+}
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.login-card {
+    width: 100%;
+    max-width: 500px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.card-header {
+    background-color: var(--ushio-green) !important;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.card-body {
+    padding: 2rem;
+}
+.ushio-logo {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    color: var(--ushio-green);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.tagline {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+.form-control {
+    padding: 0.75rem;
+    border-radius: 5px;
+}
+.btn-login {
+    background-color: var(--ushio-green);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.75rem;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 1rem;
+}
+.btn-login:hover {
+    background-color: 
+#00815e;
+}
+.alert {
+    margin-bottom: 1.5rem;
+}
+
+/* === GLOBAL NAVBAR STYLES === */
+
+.navbar {
+    background-color: var(--ushio-green, 
+#009977) !important;
+}
+
+.navbar .navbar-brand {
+    color: 
+#ffffff;
+    font-weight: bold;
+}
+
+.navbar .nav-link {
+    color: 
+#ffffff !important;
+    transition: color 0.2s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: 
+#dffaf3 !important;
+}
+
+/* === DROPDOWN MENU STYLES === */
+
+.dropdown-menu {
+    background-color: var(--ushio-green-dark, 
+#00815e);
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.dropdown-menu .dropdown-item {
+    color: 
+#ffffff;
+    padding: 10px 20px;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.dropdown-divider {
+    border-top: 1px solid 
+#ffffff;
+}
+
+/* === Responsive tweaks (optional) === */
+@media (max-width: 992px) {
+    .navbar .nav-link {
+        padding-left: 1rem;
+    }
+}
+
+.attachment-preview {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.file-icon {
+    font-size: 4rem;
+    color: 
+#6c757d;
+}
